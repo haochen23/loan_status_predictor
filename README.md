@@ -39,21 +39,3 @@ Usage
     * It will add a file called `train.csv` to the `processed` folder.
 * Run `python predict.py`.
     * This will run cross validation across the training set, and print the accuracy score.
-
-Extending this
--------------------------
-
-If you want to extend this work, here are a few places to start:
-
-* Generate more features in `annotate.py`.
-* Switch algorithms in `predict.py`.
-* Add in a way to make predictions on future data.
-* Try seeing if you can predict if a bank should have issued the loan.
-    * Remove any columns from `train` that the bank wouldn't have known at the time of issuing the loan.
-        * Some columns are known when Fannie Mae bought the loan, but not before
-    * Make predictions.
-* Explore seeing if you can predict columns other than `foreclosure_status`.
-    * Can you predict how much the property will be worth at sale time?
-* Explore the nuances between performance updates.
-    * Can you predict how many times the borrower will be late on payments?
-    * Can you map out the typical loan lifecycle?
